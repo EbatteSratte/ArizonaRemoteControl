@@ -19,7 +19,7 @@ def checkProcessRunning(processName):
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
     return False;
-direct = 'C:\\Users\\Maksim\\AppData\\Local\\Programs\\"Arizona Games Launcher"\\"Arizona Games Launcher.exe"'
+direct = 'C:\\Users\\Maksim\\AppData\\Local\\Programs\\"Arizona Games Launcher"\\"Arizona Games Launcher.exe"' //write your directions
 bot = telebot.TeleBot(config.get('main', 'Token'))
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
